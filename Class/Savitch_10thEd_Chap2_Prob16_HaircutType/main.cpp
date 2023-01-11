@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
     
     //Display Inputs/Outputs
     cout<<"What type of Haircut based on "<<
-            "Sex, Hero Status,Food, or Program Type"<<endl;
+            "Sex, Hero Status, Food, or Program Type"<<endl;
     cout<<hairCut<<endl;
     
     //Clean up memory and files
