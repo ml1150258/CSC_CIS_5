@@ -1,0 +1,64 @@
+/* 
+  File:   main.cpp
+  Author: Dr. Mark E. Lehr
+  Final Version on January 25, 2017, 11:35 AM
+  Purpose:  Statistics for Craps version 3
+ */
+
+//System Libraries
+//Input Output library
+//Random numbers
+//Time to set the Seed
+//File stream library
+//Format Library
+//Namespace std of system libraries
+
+//User Libraries
+
+//Global Constants
+//Such as PI, Vc, -> Math/Science values
+//as well as conversions from system of units to another
+//Percentage Conversion
+//Million
+//100,000
+
+//Function Prototypes
+
+//Main -> Executable code begins here!!!
+    //Set the random number seed
+    
+    //Instantiate and Open files
+    
+    //Declare Variables and Initialize
+    //Number of throws for the pair of dice
+    //Counters/indicators
+    //Average number of Throws per game
+    
+    //Input the number of games
+    //Last line will be number of games from file
+    //Loop to end
+    //Limit the number of Games
+    
+    //Play the game by -> Looping and take Dice statistics
+        //Call random number generator for the dice
+        //Value from 1 to 6
+        //Value from 1 to 6
+        //Sum the dice
+        //Increment the average throw counter
+        //Initialize the game throw count
+        //Now determine wins or losses
+            //2,3,12 is a win
+            //7,11 is a loss
+            //Any other throw requires repetition
+            //Initialize the boolean for repeating
+                    //Value from 1 to 6
+                    //Value from 1 to 6
+                    //Increment counters
+                    //Sum the dice
+                    //Record win,loss or repeat   
+        //Find max throws
+    
+    //Output all the statistics to a file
+    
+    //Close files and Exit stage right!
+  
