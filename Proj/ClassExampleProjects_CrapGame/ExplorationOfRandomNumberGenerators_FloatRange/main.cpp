@@ -33,9 +33,9 @@ int main(int argc, char** argv) {
           randNum;//Random Number Achieved
     
     //Initial Variables
-    minRng=-101.7;
-    maxRng=160.9;
-    maxRand=(1<<15)-1;//2^15-1 pow(2,15)-1
+    minRng=-99.7;
+    maxRng=62.9;
+    maxRand=(1<<31)-1;//2^15-1 pow(2,15)-1 for 2 Byte Randoms
     randNum=1.0f*rand()/maxRand;//(0,1)
     minR=randNum*(maxRng-minRng)+minRng;//(minRng, maxRng)
     maxR=randNum*(maxRng-minRng)+minRng;//(minRng, maxRng)

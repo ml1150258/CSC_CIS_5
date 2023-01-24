@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     
     //Initial Variables
     win=lose=rollAgn=0;
-    nGames=1000;
+    nGames=1000000000;
     
     //Map the Inputs to the Outputs
     for(int game=1;game<=nGames;game++){

@@ -16,6 +16,7 @@ using namespace std;
 
 //Global Constants
 //Physics/Chemistry/Math/Conversion Higher Dimension Only
+const float PERCENT=100.0f;//Percent Conversion
 
 //Function Prototypes
 
@@ -31,19 +32,23 @@ int main(int argc, char** argv) {
           randNum;//Random Number Achieved
     
     //Initial Variables
-    maxRand=(1<<15)-1;//2^15-1 pow(2,15)-1
+    maxRand=(1<<31)-1;//2^15-1 pow(2,15)-1 2Byte Randoms
     minR=maxR=1.0f*rand()/maxRand;
     
     //Map the Inputs to the Outputs
-    for(int test=0;test<50000000;test++){
+    for(int test=0;test<5;test++){
         randNum=1.0f*rand()/maxRand;
+        cout<<"The % returned = "<<randNum*PERCENT
+            <<"%"<<endl;
         if(randNum>maxR)maxR=randNum;
         if(randNum<minR)minR=randNum;
     }
 
     //Display the Inputs and Outputs
-    cout<<"The minimum random number encountered = "<<minR<<endl;
-    cout<<"The maximum random number encountered = "<<maxR<<endl;
+    cout<<"The minimum random number encountered = "<<minR*PERCENT
+            <<"%"<<endl;
+    cout<<"The maximum random number encountered = "<<maxR*PERCENT
+            <<"%"<<endl;
 
     //Exit the code
     return 0;
