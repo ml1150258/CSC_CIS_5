@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     bProb=1.0f/2.0f;
     cProb=1.0f;
     cntA=cntB=cntC=0;
-    nShtOts=1000000;
+    nShtOts=10000;
     
     //Loop and play the game over and over
     for(int shtOut=1;shtOut<=nShtOts;shtOut++){
