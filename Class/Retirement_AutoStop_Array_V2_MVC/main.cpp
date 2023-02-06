@@ -1,0 +1,82 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ * Created on January 31, 2022, 10:40 AM
+ * Purpose:  Savings
+ */
+
+//System Level Libraries
+#include <iostream>  //Input-Output Library
+#include <iomanip>   //Format Library
+using namespace std;
+
+//User Defined Libraries
+
+//Global Constants, not Global Variables
+//These are recognized constants from the sciences
+//Physics/Chemistry/Engineering and Conversions between
+//systems of units!
+const unsigned char PERCENT=100;//Conversion to Decimal from Percent
+
+//Function Prototypes
+
+//Execution begins here!
+int main(int argc, char** argv) {
+    //Declare Variables
+    float initSav,    //Initial Savings in $'s
+          invRate,    //Investment Rate in %
+           salary,    //Salary $'s/year
+          percDep,    //Percent of Salary to save each year %
+          req2Rtr;    //Required Savings to Retire with $'s
+    unsigned short stYear;//Starting Year 
+    const int SIZE=100;
+    int   years[SIZE],//Index of the Arrays
+           date[SIZE];//Date Year
+    float retSavs[SIZE],//Retirement Savings $'s
+          intrst[SIZE], //Interest/Year $'s
+          yrlyDep[SIZE];//Yearly Deposit
+
+    //Initialize Variables
+    initSav=0;//$0 change if you have retirement to this point
+    invRate=5;//5%
+    stYear=2022;//Year to start savings
+    salary=1e5f;//$100,000
+    percDep=10; //10%
+    
+    //Map the inputs/known to the outputs
+    //Display the outputs
+    invRate/=PERCENT;
+    percDep/=PERCENT;
+    retSavs[0]=initSav;
+    req2Rtr=salary/invRate;
+    yrlyDep[0]=salary*percDep;
+
+    //Business Logic/Computations
+    for(int yrs=0;retSavs[yrs]<req2Rtr;yrs++){
+        intrst[yrs]=retSavs[yrs]*invRate;
+        years[yrs]=yrs;
+        date[yrs]=yrs+stYear;
+        yrlyDep[yrs]=yrlyDep[0];
+        retSavs[yrs+1]=retSavs[yrs]+intrst[yrs];
+        retSavs[yrs+1]+=yrlyDep[yrs];
+    }
+    
+    //Display the Arrays
+    cout<<fixed<<setprecision(2)<<showpoint;
+    cout<<"$"<<initSav<<" = Initial Principle $'s"<<endl;
+    cout<<invRate*PERCENT<<"% = Investment Rate %"<<endl;
+    cout<<"$"<<salary<<" = Salary/Income at Retirement"<<endl;
+    cout<<percDep*PERCENT<<" = % Salary to Deposit for Retirement"<<endl;
+    cout<<"$"<<req2Rtr<<" = Savings required to Retire"<<endl;
+    cout<<endl<<setw(10)<<"Years"<<setw(10)<<"Year"
+                <<setw(15)<<"Retirement"<<setw(10)<<"Interest"
+                <<setw(10)<<"Deposit"<<endl;
+    for(int yrs=0;retSavs[yrs]<req2Rtr;yrs++){
+        cout<<setw(10)<<years[yrs]<<setw(10)<<date[yrs]
+                <<setw(15)<<retSavs[yrs]<<setw(10)<<intrst[yrs]
+                <<setw(10)<<yrlyDep[yrs]<<endl;
+    }
+
+    //Exit the program
+    return 0;
+}
