@@ -111,6 +111,6 @@ void prntAry(int a[],int n,int perLine){
 
 void fillAry(int a[],int n){
     for(int i=0;i<n;i++){
-        a[i]=rand()%90+10;//[10,99]
+        a[i]=rand()%50+10;//[10,59]
     }
 }

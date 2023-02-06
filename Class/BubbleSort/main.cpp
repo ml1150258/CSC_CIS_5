@@ -61,7 +61,7 @@ void bubSort(int a[],int n){
                 swap=true;
             }
         } 
-        redList--;
+       redList--;
     }while(swap);
 }
 

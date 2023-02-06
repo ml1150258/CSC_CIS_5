@@ -56,9 +56,7 @@ void selSort(int a[],int n){
     for(int i=0;i<n-1;i++){
         int indx=i;
         for(int j=i+1;j<n;j++){
-            if(a[indx]>a[j]){
-                indx=j;
-            }
+            if(a[indx]>a[j])indx=j;
         }
         swap1(a[i],a[indx]);
     }
