@@ -1,0 +1,9 @@
+This Program calculates
+either Savings or Cost.  
+There are 3 required inputs.
+Two of these inputs are embedded
+in the Program.  Namely Principle/
+Price and Inflation/Interest.
+In addition the program calculates
+the number of compounding periods
+using the rule of 72.
