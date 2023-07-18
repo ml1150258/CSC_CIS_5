@@ -103,7 +103,7 @@ int main(int argc, char** argv) {
     out<<"Percentage of Games Lost   = "<<PERCENT*loses/nGames<<"%"<<endl;
     out<<"Maximum number of rolls/game = "<<mxRolls<<endl;
     out<<"Average number of rolls/game = "<<1.0f*avgRols/nGames<<endl;
-    cout<<"The standard deviation = "<<pow(smSqrs/(nGames-1),0.5);
+    out<<"The standard deviation = "<<pow(smSqrs/(nGames-1),0.5);
     
     //Exit stage right
     in.close();

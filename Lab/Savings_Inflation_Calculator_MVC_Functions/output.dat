@@ -1,0 +1,19 @@
+     Savings/Inflation Calculator
+
+Principle/Cost = $100
+Interest Rate/Inflation Rate = 6%
+Number of compounding periods = 12 years
+Year  Savings/Cost  Interest/Inflation
+   0     $100.00         $ 6.00
+   1     $106.00         $ 6.36
+   2     $112.36         $ 6.74
+   3     $119.10         $ 7.15
+   4     $126.25         $ 7.57
+   5     $133.82         $ 8.03
+   6     $141.85         $ 8.51
+   7     $150.36         $ 9.02
+   8     $159.38         $ 9.56
+   9     $168.95         $10.14
+  10     $179.08         $10.75
+  11     $189.83         $11.39
+  12     $201.22         $12.07
