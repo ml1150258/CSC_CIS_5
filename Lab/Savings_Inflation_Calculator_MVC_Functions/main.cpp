@@ -13,7 +13,7 @@ using namespace std;
 
 //User Libraries
 
-//Global Constants - Math/Science/Conversions only
+//Global Constants - Math/Science/Conversions and Higher Dimension only
 const unsigned char CNVPERC=100;//Conversion to and from Percentage
 
 //Function Prototypes
