@@ -51,11 +51,11 @@ int main(int argc, char** argv) {
 }
 
 void mrkSrt(int a[],int n){
-    for(int j=0;j<n-1;j++){
-        for(int i=j+1;i<n;i++){
-            if(a[j]>a[i]){
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(a[i]>a[j]){
                 int temp=a[j];
-                a[j]=a[i];
+                j[a]=a[i];
                 a[i]=temp;
             }
         }
