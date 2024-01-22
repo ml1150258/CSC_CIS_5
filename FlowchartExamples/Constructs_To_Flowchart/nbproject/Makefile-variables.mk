@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=Cygwin_1-Windows
-CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
+CND_PLATFORM_Debug=Cygwin-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
 CND_ARTIFACT_NAME_Debug=constructs_to_flowchart
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/constructs_to_flowchart
-CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/constructs_to_flowchart
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
 CND_PACKAGE_NAME_Debug=constructstoflowchart.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/constructstoflowchart.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/constructstoflowchart.tar
 # Release configuration
-CND_PLATFORM_Release=Cygwin_1-Windows
-CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
+CND_PLATFORM_Release=Cygwin-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
 CND_ARTIFACT_NAME_Release=constructs_to_flowchart
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/constructs_to_flowchart
-CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/constructs_to_flowchart
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
 CND_PACKAGE_NAME_Release=constructstoflowchart.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/constructstoflowchart.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/constructstoflowchart.tar
 #
 # include compiler specific variables
 #
