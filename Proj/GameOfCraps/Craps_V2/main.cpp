@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     
     //Initialize variables
     wins=loses=0;
-    nGames=1000000;
+    nGames=10000000;
     mxRolls=avgRols=0;
     
     //Process, map inputs to outputs

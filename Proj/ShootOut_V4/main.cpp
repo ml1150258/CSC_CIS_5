@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
     bProb=1.0f/2.0f; //50%
     cProb=1.0f;      //100%
     cntA=cntB=cntC=0;//Number of times they lived
-    nShtOts=1000000; //Number of games
+    nShtOts=10000; //Number of games
     
     //Loop and play the game over and over
     for(int shtOut=1;shtOut<=nShtOts;shtOut++){
@@ -85,5 +85,5 @@ bool  isLess(float prob){
 }
 
 float rndProb(){
-    return 1.0f*rand()/(pow(2,15)-1);
+    return 1.0f*rand()/(pow(2,31)-1);
 }

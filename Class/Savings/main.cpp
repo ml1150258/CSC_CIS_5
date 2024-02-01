@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
     pv=1e2f;//$100
     intRate=6;//6%
     nCmpPds=12;//12 years
-    stYear=2022;//Year to start savings
+    stYear=2024;//Year to start savings
     
     //Map the inputs/known to the outputs
     //Display the outputs

@@ -26,8 +26,8 @@ float save2(float,float,int);//Using Exp-Log Function
 float save3(float,float,int);//Using For-Loop Function
 float save4(float,float,int);//Using Recursive Function
 void  save5(float &,float,int);//Pass by Reference
-void  save6(float &,float,int=12);//Defaulted Parameter
-int   save7(float &,float,int=12);//Static Variable
+void  save6(float &,float,int=9);//Defaulted Parameter
+int   save7(float &,float,int=9);//Static Variable
 
 //Execution begins here!
 int main(int argc, char** argv) {
@@ -39,8 +39,8 @@ int main(int argc, char** argv) {
     
     //Initialize Variables
     pv=1e2f;  //$100
-    intRate=6;//8 Percent
-    nCmpds=12; //9 Years
+    intRate=8;//8 Percent
+    nCmpds=9; //9 Years
     
     //Map the inputs/known to the outputs
     intRate/=PERCENT;

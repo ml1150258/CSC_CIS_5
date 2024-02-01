@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     int n,fact;
     
     //Input or initialize values Here
-    n=5;
+    n=10;
     fact=1;
     
     //Process/Calculations Here

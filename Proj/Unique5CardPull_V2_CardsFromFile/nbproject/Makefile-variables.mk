@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=Cygwin_1-Windows
-CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
+CND_PLATFORM_Debug=Cygwin-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
 CND_ARTIFACT_NAME_Debug=unique5cardpull_v2_cardsfromfile
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/unique5cardpull_v2_cardsfromfile
-CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/unique5cardpull_v2_cardsfromfile
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
 CND_PACKAGE_NAME_Debug=unique5cardpullv2cardsfromfile.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/unique5cardpullv2cardsfromfile.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/unique5cardpullv2cardsfromfile.tar
 # Release configuration
-CND_PLATFORM_Release=Cygwin_1-Windows
-CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
+CND_PLATFORM_Release=Cygwin-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
 CND_ARTIFACT_NAME_Release=unique5cardpull_v2_cardsfromfile
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/unique5cardpull_v2_cardsfromfile
-CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/unique5cardpull_v2_cardsfromfile
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
 CND_PACKAGE_NAME_Release=unique5cardpullv2cardsfromfile.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/unique5cardpullv2cardsfromfile.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/unique5cardpullv2cardsfromfile.tar
 #
 # include compiler specific variables
 #
