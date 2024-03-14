@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=GradeDependentIf_V1
+PROJECTNAME=GradeDependentIf_V2
 
 # Active Configuration
 DEFAULTCONF=Debug
