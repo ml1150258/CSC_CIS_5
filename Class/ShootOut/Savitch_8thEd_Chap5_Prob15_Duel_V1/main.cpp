@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     limit=1;
     
     //Map inputs -> outputs
-    for(int i=1;i<=nLoops;i++){
+    for(unsigned int i=1;i<=nLoops;i++){
         maxMin(rand(),mx,mn);
     }
     limit<<=31;
