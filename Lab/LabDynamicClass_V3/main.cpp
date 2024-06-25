@@ -57,14 +57,14 @@ class Table{
 //Execution begins here at main
 int main(int argc, char** argv) {
     //Declare Variables
-    int size=4;
+    int size=11;
     Table table;
     
     //Initialize Variables
     table.init(size);
     
     //Map/Process the Inputs -> Outputs
-    for(int i=-2*size;i<2*size;i++){
+    for(int i=0;i<size;i++){
         table.setX(i,i);
         table.setSqrx(i,table.getX(i)*table.getX(i));
         table.setCubex(i,table.getSqrx(i)*table.getX(i));
@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
     
     //Display Inputs/Outputs
     cout<<setw(10)<<"X"<<setw(10)<<"SQRX"<<setw(10)<<"CUBEX"<<endl;
-    for(int i=-2*size;i<2*size;i++){
+    for(int i=0;i<size;i++){
         cout<<setw(10)<<table.getX(i)
             <<setw(10)<<table.getSqrx(i)
             <<setw(10)<<table.getCubex(i)<<endl;
