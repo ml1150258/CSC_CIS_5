@@ -1,6 +1,6 @@
 /*
 Name:  Dr. Mark Lehr
-Date:  02/04/25
+Date:  02/06/25
 Purpose: Testing Linear and Binary Searches
 */
 
@@ -21,6 +21,7 @@ void fillAry(int [],int);
 void prntAry(int [],int,int);
 void mrkSort(int [],int);
 bool linSrch(int [],int,int,int&);
+bool binSrch(int [],int,int,int&);
 
 
 int main(int argv,char **argc){
@@ -38,17 +39,46 @@ int main(int argv,char **argc){
 	prntAry(array,SIZE,10);
 	
 	//Map the Inputs to Outputs - Process
+	cout<<"Linear Search"<<endl;
 	if(linSrch(array,SIZE,val2Fnd,indx))cout<<val2Fnd<<" is at index = "<<indx<<" Before Sort"<<endl;
-	else cout<<"Value "<<val2Fnd<<" not Found"<<endl;
+	else cout<<"Value "<<val2Fnd<<" not Found"<<endl<<endl;
+	
+	cout<<"Binary Search"<<endl;
+	if(binSrch(array,SIZE,val2Fnd,indx))cout<<val2Fnd<<" is at index = "<<indx<<" Before Sort"<<endl;
+	else cout<<"Value "<<val2Fnd<<" not Found"<<endl<<endl;
+	
 	mrkSort(array,SIZE);
+	
+	cout<<"Linear Search"<<endl;
 	if(linSrch(array,SIZE,val2Fnd,indx))cout<<val2Fnd<<" is at index = "<<indx<<" After Sort"<<endl;
-	else cout<<"Value "<<val2Fnd<<" not Found"<<endl;
+	else cout<<"Value "<<val2Fnd<<" not Found"<<endl<<endl;
+	
+	cout<<"Binary Search"<<endl;
+	if(binSrch(array,SIZE,val2Fnd,indx))cout<<val2Fnd<<" is at index = "<<indx<<" After Sort"<<endl;
+	else cout<<"Value "<<val2Fnd<<" not Found"<<endl<<endl;
 	
 	//Display and output the results
 	prntAry(array,SIZE,10);
 	
 	//Exit the program
 	return 0;
+}
+
+bool binSrch(int a[],int n,int valFind,int &indx){
+	int mnRng=0,mxRng=n-1;
+	do{
+		int middle=(mxRng+mnRng)/2;
+		if(a[middle]==valFind){    //Found the value in the array
+			indx=middle;
+			return true;
+		}else if(a[middle]>valFind){//Modify the upper range
+			mxRng=middle-1;
+		}else{                     //Modify the lower range
+			mnRng=middle+1;
+		}
+	//}while(mxRng>=mnRng);
+	}while(!(mxRng<mnRng));
+	return false;
 }
 
 bool linSrch(int a[],int n,int valFind,int &indx){
