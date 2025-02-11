@@ -51,8 +51,8 @@ int main(int argv,char *argc[]){
 void mrkSort(int *a,int n){
 	for(int j=0;j<n-1;j++){
 		for(int i=j+1;i<n;i++){
-			//if(*(a+j)>a[i])swapMrk(a[j],a[i]);
-			if(*(a+j)>a[i])swapMrk(a+j,a+i);
+			//if(*(a+j)>a[i])swapMrk(a[j],a[i]); //Reference swap
+			if(*(a+j)>a[i])swapMrk(a+j,a+i);     //Pointer swap
 		}
 	}
 }
