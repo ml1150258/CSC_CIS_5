@@ -47,22 +47,22 @@ int main(int argv,char **argc){
 	myStrCp(words[4],e);
 	myStrCp(words[5],f);
 	//What does this do
-	//myStrCp(temp,words[0]);
-	//myStrCp(words[0],words[5]);
-	//myStrCp(words[5],temp);
-	strcpy(temp,words[0]);
-	strcpy(words[0],words[5]);
-	strcpy(words[5],temp);
+	myStrCp(temp,words[0]);
+	myStrCp(words[0],words[5]);
+	myStrCp(words[5],temp);
+	//strcpy(temp,words[0]);
+	//strcpy(words[0],words[5]);
+	//strcpy(words[5],temp);
 	
 	//Display and output the results
 	for(int i=0;i<5;i++){
 		cout<<words[i]<<
-			(myStrCm(words[i],words[i+1])==-1?'<':
-			 myStrCm(words[i],words[i+1])==1?'>':'=')
+			(myStrCm(words[i],words[i+1])<0?'<':
+			 myStrCm(words[i],words[i+1])>0?'>':'=')
 		<<words[i+1]<<endl;
 		cout<<words[i]<<
-			(strcmp(words[i],words[i+1])==-1?'<':
-			 strcmp(words[i],words[i+1])==1?'>':'=')
+			(strcmp(words[i],words[i+1])<0?'<':
+			 strcmp(words[i],words[i+1])>0?'>':'=')
 		<<words[i+1]<<endl;
 	}
 	
