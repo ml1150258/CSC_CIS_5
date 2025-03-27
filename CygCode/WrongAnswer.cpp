@@ -1,12 +1,12 @@
 /*
 Name:  Dr. Mark Lehr
-Date:  01/30/25
-Purpose: Using String Streams
+Date:  01/06/25
+Purpose: This is a template from which a copy of all code
+         will begin
 */
 
 //System Libraries
-#include <iostream> //I/O Library
-#include <sstream>  //Conversion between data types using strings
+#include <iostream>
 using namespace std;
 
 //User Libraries
@@ -21,22 +21,17 @@ int main(int argv,char **argc){
 	//Random Seeds are set for the random number generator
 	
 	//Declare Variables
-	stringstream ss;
-	string str;
-	int n;
+	short a,b,c;
 	
 	//Initialize Values
-	cout<<"Input an integer that will be read in as a string"<<endl;
-	cin>>str;
-	
+	a=10000;
+	b=30000;
 	
 	//Map the Inputs to Outputs - Process
-	ss<<str;//Send the string to the SS object
-	ss>>n;  //The SS object will then do the conversion
-	n<<=2;
+	c=a+b;
 	
 	//Display and output the results
-	cout<<"This is now an 4xinteger = "<<n<<endl;
+	cout<<c<<" = "<<a<<" + "<<b<<endl;
 	
 	//Exit the program
 	return 0;

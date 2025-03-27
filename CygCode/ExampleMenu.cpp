@@ -65,7 +65,10 @@ int main(int argv,char **argc){
 				//Display and output the results
 				cout<<"Sign "<<sign1<<" = "<<"Element "<<elem1<<endl;
 				cout<<"Sign "<<sign2<<" = "<<"Element "<<elem2<<endl;
-				cout<<endl;
+				if(elem1==elem2)cout<<sign1<<" is compatible with "
+					<<sign2<<endl<<endl;
+				else cout<<sign1<<" is not compatible with "
+					 <<sign2<<endl<<endl;
 				break;}
 			case '2':{
 				//Random Seeds are set for the random number generator

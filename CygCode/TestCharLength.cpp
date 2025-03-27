@@ -1,12 +1,12 @@
 /*
 Name:  Dr. Mark Lehr
-Date:  01/30/25
-Purpose: Using String Streams
+Date:  02/27/25
+Purpose: Test Char Length
 */
 
 //System Libraries
-#include <iostream> //I/O Library
-#include <sstream>  //Conversion between data types using strings
+#include <iostream>
+#include <cstring>
 using namespace std;
 
 //User Libraries
@@ -21,22 +21,18 @@ int main(int argv,char **argc){
 	//Random Seeds are set for the random number generator
 	
 	//Declare Variables
-	stringstream ss;
-	string str;
-	int n;
+    const int SIZE=10;//Size of Char Array
+    char test[SIZE];//Char Array
 	
 	//Initialize Values
-	cout<<"Input an integer that will be read in as a string"<<endl;
-	cin>>str;
-	
+    cin>>test;
 	
 	//Map the Inputs to Outputs - Process
-	ss<<str;//Send the string to the SS object
-	ss>>n;  //The SS object will then do the conversion
-	n<<=2;
 	
 	//Display and output the results
-	cout<<"This is now an 4xinteger = "<<n<<endl;
+    cout<<test<<endl;
+    cout<<"Length of this String = "<<strlen(test)<<endl;
+    cout<<"Size of this String   = "<<sizeof(test)<<endl;
 	
 	//Exit the program
 	return 0;

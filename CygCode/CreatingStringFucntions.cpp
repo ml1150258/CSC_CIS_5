@@ -46,6 +46,9 @@ int main(int argv,char **argc){
 	myStrCp(words[3],d);
 	myStrCp(words[4],e);
 	myStrCp(words[5],f);
+	//for(int i=0;i<6;i++){
+	//	cout<<words[i]<<endl;
+	//}
 	//What does this do
 	myStrCp(temp,words[0]);
 	myStrCp(words[0],words[5]);
@@ -65,7 +68,6 @@ int main(int argv,char **argc){
 			 strcmp(words[i],words[i+1])>0?'>':'=')
 		<<words[i+1]<<endl;
 	}
-	
 	
 	//Exit the program
 	return 0;

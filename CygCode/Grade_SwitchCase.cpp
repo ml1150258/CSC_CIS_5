@@ -6,8 +6,8 @@ Purpose: Score vs. Grade
 
 //System Libraries
 #include <iostream>  //I/O Library
-#include <cstdlib>   //Random Library
-#include <ctime>     //Time Library
+//#include <cstdlib>   //Random Library
+//#include <ctime>     //Time Library
 using namespace std;
 
 //User Libraries

@@ -1,12 +1,11 @@
 /*
 Name:  Dr. Mark Lehr
-Date:  01/30/25
-Purpose: Using String Streams
+Date:  2/27/25
+Purpose: Land Calculation
 */
 
 //System Libraries
-#include <iostream> //I/O Library
-#include <sstream>  //Conversion between data types using strings
+#include <iostream>
 using namespace std;
 
 //User Libraries
@@ -14,6 +13,7 @@ using namespace std;
 //Global Constants
 //Only use Scientific Values like PI, Speed of Light, etc...
 //Conversion between units
+const float FT2ACRS=1.0/43560;//Conversion from feet to Acres
 
 //Function Prototypes
 
@@ -21,22 +21,17 @@ int main(int argv,char **argc){
 	//Random Seeds are set for the random number generator
 	
 	//Declare Variables
-	stringstream ss;
-	string str;
-	int n;
+    float  ftSq,//Feet Squared in Area
+          acres;//Area in Acres
 	
 	//Initialize Values
-	cout<<"Input an integer that will be read in as a string"<<endl;
-	cin>>str;
-	
+    ftSq=3.91876e5f;//391876 feet sqaured
 	
 	//Map the Inputs to Outputs - Process
-	ss<<str;//Send the string to the SS object
-	ss>>n;  //The SS object will then do the conversion
-	n<<=2;
+    acres=ftSq*FT2ACRS;
 	
 	//Display and output the results
-	cout<<"This is now an 4xinteger = "<<n<<endl;
+    cout<<acres<<" acres = "<<ftSq<<" ft^2"<<endl;
 	
 	//Exit the program
 	return 0;
