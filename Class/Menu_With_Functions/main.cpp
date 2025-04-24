@@ -25,6 +25,7 @@ void prblm1();
 void prblm2();
 void prblm3();
 void prblm4();
+void prblm5();
 
 //Program Execution Begins Here!!!
 int main(int argc, char** argv) {
@@ -40,6 +41,7 @@ int main(int argc, char** argv) {
         cout<<"Type 1 for Problem 2 Give a Grade"<<endl;
         cout<<"Type 2 for Problem 3 Savings Calculation"<<endl;
         cout<<"Type 3 for Problem 4"<<endl;
+        cout<<"Type 4 for Problem 5"<<endl;
         cin>>choice;
 
         //Map the Inputs to the Outputs
@@ -48,8 +50,9 @@ int main(int argc, char** argv) {
             case '1':prblm2();break;
             case '2':prblm3();break;
             case '3':prblm4();break;
+            case '4':prblm5();break;
         }
-    }while(choice>='0'&&choice<='3');
+    }while(choice>='0'&&choice<='4');
 
     //Exit the code
     return 0;
@@ -131,4 +134,8 @@ void prblm3(){
 
 void prblm4(){
     cout<<"Homework Problem 4"<<endl<<endl;
+}
+
+void prblm5(){
+    cout<<"Homework Problem 5"<<endl<<endl;
 }
