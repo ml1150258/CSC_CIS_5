@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
     unsigned int nLoops;
     
     //Initialize or input i.e. set variable values
-    nLoops=3000000000;
+    nLoops=1000000;
     mx=mn=pUnifrm();
     
     //Map inputs -> outputs

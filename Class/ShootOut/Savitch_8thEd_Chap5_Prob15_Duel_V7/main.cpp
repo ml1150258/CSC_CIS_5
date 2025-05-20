@@ -37,8 +37,8 @@ int main(int argc, char** argv) {
     int nTrials,aCnt,bCnt,cCnt;
     
     //Initialize or input i.e. set variable values
-    aSkill=1.0f/3;//Aaron skill level 33.33%
-    bSkill=0.5f;//Bob skill level 50%
+    aSkill=1/3.0f;//Aaron skill level 33.33%
+    bSkill=1/2.0f;//Bob skill level 50%
     cSkill=1.0f;  //Charlie skill level = 100%
     nTrials=1000000;//Number of trials
     aCnt=bCnt=cCnt=0;
