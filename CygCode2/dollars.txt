@@ -1,0 +1,16 @@
+
+Number of pay days = 1
+Total Pay = $0.01
+
+
+Number of pay days = 2
+Total Pay = $0.03
+
+
+Number of pay days = 3
+Total Pay = $0.07
+
+
+Number of pay days = 4
+Total Pay = $0.15
+

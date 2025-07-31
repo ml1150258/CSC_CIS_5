@@ -1,0 +1,16 @@
+
+Number of pay days = 1
+Pennies Earned = 1 cents
+Pennies Earned = 1 cents
+
+Number of pay days = 2
+Pennies Earned = 3 cents
+Pennies Earned = 3 cents
+
+Number of pay days = 3
+Pennies Earned = 7 cents
+Pennies Earned = 7 cents
+
+Number of pay days = 4
+Pennies Earned = 15 cents
+Pennies Earned = 15 cents
